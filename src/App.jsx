@@ -94,7 +94,17 @@ function App() {
         onImageChange={handleImageChange}
         onAdd={addDetails}
       />
-
+      <Typography
+        variant="h4"
+        sx={{
+          textAlign: "center",
+          fontWeight: 700,
+          py: 3,
+          letterSpacing: "-0.5px",
+        }}
+      >
+        Projects
+      </Typography>
       <SearchBar
         value={searchText}
         onChange={(e) => setSearchText(e.target.value.toLowerCase())}

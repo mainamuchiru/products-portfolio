@@ -1,18 +1,80 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Webpage Screenshot](./src/assets/website-shot.png)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# Portfolio Project
 
-## React Compiler
+A React application for managing and showcasing your personal projects. Add, search, and delete projects with image support and persistent storage.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## Features
 
-## Expanding the ESLint configuration
+- Add projects with a title, description, and image
+- Search projects by title in real time
+- Delete projects
+- Data persists in the browser using localStorage
+- Responsive and clean UI built with Material UI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Components
+
+| Component | Description |
+|---|---|
+| `App.jsx` | Root component, holds all state and logic |
+| `ProjectForm.jsx` | Form to add a new project |
+| `SearchBar.jsx` | Input to filter projects by title |
+| `ProjectList.jsx` | Renders the list of project cards |
+| `ProjectCard.jsx` | Displays a single project with image, title, description, and delete button |
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Node.js installed
+- npm 
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/portfolio-project.git
+
+# Navigate into the project folder
+cd portfolio-project
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+---
+
+## Tech Stack
+
+- [React](https://react.dev/) — UI library
+- [Material UI](https://mui.com/) — Component and styling library
+- localStorage — Client-side data persistence
+
+---
+
+## React Concepts Used
+
+- `useState` — managing form inputs, project list, error, and search state
+- `useEffect` — loading and saving projects to localStorage
+- Component composition — breaking UI into reusable components
+- Props — passing data and handlers between components
+- Controlled components — form inputs controlled by React state
+- Conditional rendering — showing empty states and error messages
+- List rendering — mapping projects to cards with unique keys
+
+---
+
+## Author
+
+Made by Philip Muchiru
+
