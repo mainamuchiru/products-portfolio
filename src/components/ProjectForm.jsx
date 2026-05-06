@@ -51,7 +51,7 @@ function ProjectForm({
         />
       </Box>
 
-      {/* Image upload */}
+      
       <Box>
         <input
           type="file"
