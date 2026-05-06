@@ -23,8 +23,8 @@ function ProjectForm({
         border: "1px solid rgba(233,69,96,0.3)",
         borderRadius: 4,
         boxShadow: "0 4px 20px rgba(233,69,96,0.08)",
-        backgroundColor: "#fff",
-        width:"70",
+        
+        width: "70%" ,
         mx: "auto",
         mb: 4,
       }}
@@ -89,7 +89,7 @@ function ProjectForm({
                 src={image}
                 alt="preview"
                 style={{
-                  width: "30%",
+                  width: "60%",
                   maxHeight: 140,
                   objectFit: "cover",
                   display: "block",
